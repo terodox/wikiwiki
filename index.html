@@ -17,11 +17,28 @@
       sentence-display {
         width: 100%;
       }
+
+      sentence-display.hidden {
+        transition: all 1s;
+        height: 0;
+        opacity: 0;
+      }
+
+      .congrats {
+        position: relative;
+        opacity: 0;
+      }
+
+      .congrats.show {
+        opacity: 1;
+        transition: all 1s;
+      }
     </style>
   </head>
   <body>
     <h1>Wikiwiki - A typing game!</h1>
     <h2>Just type the letters 😊</h2>
     <sentence-display></sentence-display>
+    <h2 class="congrats">Congratulations! You've completed it!</h2>
   </body>
 </html>
