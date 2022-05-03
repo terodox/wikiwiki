@@ -6,12 +6,22 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/main.ts"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+      }
+
+      sentence-display {
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <sentence-display sentence="Mary had a little lamb who's fleece was white as snow" current-index="10"></sentence-display>
-    <letter-display state="untouched">W</letter-display>
-    <letter-display state="active">W</letter-display>
-    <letter-display state="correct">W</letter-display>
-    <letter-display state="incorrect">W</letter-display>
+    <h1>Wikiwiki - A typing game!</h1>
+    <h2>Just type the letters 😊</h2>
+    <sentence-display></sentence-display>
   </body>
 </html>
