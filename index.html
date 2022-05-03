@@ -4,36 +4,9 @@
     <title>Wikiwiki - Typing game</title>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="/src/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/main.ts"></script>
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        font-family: Arial, Helvetica, sans-serif;
-        align-items: center;
-      }
-
-      sentence-display {
-        width: 100%;
-      }
-
-      sentence-display.hidden {
-        transition: all 1s;
-        height: 0;
-        opacity: 0;
-      }
-
-      .congrats {
-        position: relative;
-        opacity: 0;
-      }
-
-      .congrats.show {
-        opacity: 1;
-        transition: all 1s;
-      }
-    </style>
   </head>
   <body>
     <h1>Wikiwiki - A typing game!</h1>

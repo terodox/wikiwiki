@@ -1,5 +1,3 @@
-import { ColorPalette, Font } from '../styles';
-
 export const attributes = {
   state: 'state',
 };
@@ -41,9 +39,9 @@ export class LetterDisplay extends HTMLElement {
         }
         figure {
           border-radius: 10px;
-          color: ${Font.color};
-          font-family: ${Font.family};
-          font-size: ${Font.sizeLrg};
+          color: var(--font-color);
+          font-family: var(--font-family);
+          font-size: var(--font-sizeLrg);
           height: 60px;
           width: 60px;
           margin: 0;
@@ -54,7 +52,7 @@ export class LetterDisplay extends HTMLElement {
         }
 
         figure .result-container > * {
-          font-size: ${Font.sizeSm};
+          font-size: var(--font-sizeSm);
           position: absolute;
           display: none;
         }
@@ -67,22 +65,22 @@ export class LetterDisplay extends HTMLElement {
         }
 
         .${LetterState.active} {
-          background-color: ${ColorPalette.active};
-          border: 3px solid ${ColorPalette.activeBorder};
+          background-color: var(--color-active);
+          border: 3px solid var(--color-activeBorder);
           border-bottom: 5px solid black;
         }
         .${LetterState.correct} {
-          background-color: ${ColorPalette.correct};
-          border: 3px solid ${ColorPalette.correctBorder};
+          background-color: var(--color-correct);
+          border: 3px solid var(--color-correctBorder);
         }
         .${LetterState.incorrect} {
-          background-color: ${ColorPalette.incorrect};
-          border: 3px solid ${ColorPalette.incorrectBorder};
+          background-color: var(--color-incorrect);
+          border: 3px solid var(--color-incorrectBorder);
           border-bottom: 5px solid black;
         }
         .${LetterState.untouched} {
-          background-color: ${ColorPalette.untouched};
-          border: 3px solid ${ColorPalette.untouchedBorder};
+          background-color: var(--color-untouched);
+          border: 3px solid var(--color-untouchedBorder);
           font-weight: bold;
         }
       </style>

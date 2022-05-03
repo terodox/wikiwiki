@@ -1,0 +1,44 @@
+:root {
+  --color-text: #001219;
+  --color-buttonPrimary: #94D2BD;
+  --color-active: #E9D8A6;
+  --color-activeBorder: #AFA37F;
+  --color-correct: #C0DF85;
+  --color-correctBorder: #859B5B;
+  --color-incorrect: #FF9999;
+  --color-incorrectBorder: #AF6868;
+  --color-untouched: #EEE;
+  --color-untouchedBorder: #AAA;
+  --font-family: Arial;Verdana;Sans-serif;
+  --font-color: #222;
+  --font-sizeSm: .5rem;
+  --font-sizeMed: 1rem;
+  --font-sizeLrg: 2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+}
+
+sentence-display {
+  width: 100%;
+}
+
+sentence-display.hidden {
+  transition: all 1s;
+  height: 0;
+  opacity: 0;
+}
+
+.congrats {
+  position: relative;
+  opacity: 0;
+}
+
+.congrats.show {
+  opacity: 1;
+  transition: all 1s;
+}
