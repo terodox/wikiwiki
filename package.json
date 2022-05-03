@@ -1,0 +1,11 @@
+{
+  "name": "wikiwiki",
+  "version": "0.0.0",
+  "description": "A simple fast typing tutor",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "terodox",
+  "license": "MIT"
+}
