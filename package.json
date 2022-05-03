@@ -1,11 +1,20 @@
 {
   "name": "wikiwiki",
+  "private": true,
   "version": "0.0.0",
   "description": "A simple fast typing tutor",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "start": "vite"
   },
   "author": "terodox",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "4.6.4",
+    "vite": "2.9.7",
+    "vitest": "0.10.1"
+  }
 }
