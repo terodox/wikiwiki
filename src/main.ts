@@ -1,4 +1,4 @@
-import './components/letter-display';
+import './components/word-container';
 import { gameManager } from './game-manager';
 import { congratsTag, resetButton, sentenceTag } from './index-tags';
 import { sentenceFactory } from './services/sentence-factory';

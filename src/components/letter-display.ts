@@ -42,8 +42,9 @@ export class LetterDisplay extends HTMLElement {
           color: var(--font-color);
           font-family: var(--font-family);
           font-size: var(--font-sizeLrg);
-          height: 60px;
-          width: 60px;
+          line-height: var(--font-sizeLrg);
+          height: var(--letter-container-size);
+          width: var(--letter-container-size);
           margin: 0;
           padding: 0;
           display: flex;
@@ -67,7 +68,8 @@ export class LetterDisplay extends HTMLElement {
         .${LetterState.active} {
           background-color: var(--color-active);
           border: 3px solid var(--color-activeBorder);
-          border-bottom: 5px solid black;
+          border-bottom: 5px solid var(--color-activeBottomBorder);
+          font-weight: bold;
         }
         .${LetterState.correct} {
           background-color: var(--color-correct);
@@ -81,7 +83,6 @@ export class LetterDisplay extends HTMLElement {
         .${LetterState.untouched} {
           background-color: var(--color-untouched);
           border: 3px solid var(--color-untouchedBorder);
-          font-weight: bold;
         }
       </style>
       <figure class="${LetterState.untouched}">
