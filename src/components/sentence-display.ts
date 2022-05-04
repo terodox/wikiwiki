@@ -40,7 +40,7 @@ export class SentenceDisplay extends HTMLElement {
     this.root.innerHTML = `
       <style>
         :host {
-          --letter-container-size: 60px;
+          --letter-container-size: calc(var(--font-base-size) * 4);
           --letter-size: var(--font-sizeLrg);
         }
         section > * {

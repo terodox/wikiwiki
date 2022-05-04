@@ -12,6 +12,7 @@
   --color-untouched: #EEE;
   --color-untouchedBorder: #AAA;
 
+  --font-base-size: 16px;
   --font-family: Arial,Verdana,Sans-serif;
   --font-color: #222;
   --font-sizeSm: .5rem;
@@ -22,6 +23,8 @@
   --spacing-Sm: .5rem;
   --spacing-Med: 1rem;
   --spacing-Lrg: 2rem;
+
+  --transition: all 1s;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -50,14 +53,20 @@ body {
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   align-items: center;
+  font-size: var(--font-base-size);
+}
+
+.reset-button {
+  margin-bottom: var(--spacing-Lrg);
 }
 
 sentence-display {
+  transition: var(--transition);
   width: 100%;
 }
 
 sentence-display.hidden {
-  transition: all 1s;
+  transition: var(--transition);
   height: 0;
   opacity: 0;
 }
@@ -68,6 +77,6 @@ sentence-display.hidden {
 }
 
 .congrats.show {
+  transition: var(--transition);
   opacity: 1;
-  transition: all 1s;
 }
